@@ -30,7 +30,7 @@ func sayHello(w http.ResponseWriter, r *http.Request) {
 			allIPs += ip.String() + ", "
 		}
 	}
-	message := "<h1>Hello from " + allIPs + "</h1>"
+	message := "Container ip is - " + allIPs
 	w.Write([]byte(message))
 }
 func main() {
